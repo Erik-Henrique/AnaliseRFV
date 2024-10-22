@@ -5,19 +5,10 @@ import streamlit         as st
 import numpy             as np
 
 from datetime            import datetime
-from io                  import BytesIO
+
 
 def convert_df(df):
     return df.to_csv(index=False).encode('utf-8')
-
-# Função para converter o df para excel
-def to_excel(df):
-    output = BytesIO()
-    writer = pd.ExcelWriter(output, engine='xlsxwriter')
-    df.to_excel(writer, index=False, sheet_name='Sheet1')
-    writer.save()
-    processed_data = output.getvalue()
-    return processed_data
 
 
 ### Criando os segmentos
@@ -158,17 +149,6 @@ def main():
 
         df_RFV['acoes de marketing/crm'] = df_RFV['RFV_Score'].map(dict_acoes)
         st.write(df_RFV.head())
-
-
-        # df_RFV.to_excel('./auxiliar/output/RFV_.xlsx')
-        df_xlsx = to_excel(df_RFV)
-        st.download_button(label='📥 Download',
-                            data=df_xlsx ,
-                            file_name= 'RFV_.xlsx')
-
-        st.write('Quantidade de clientes por tipo de ação')
-        st.write(df_RFV['acoes de marketing/crm'].value_counts(dropna=False))
-
 if __name__ == '__main__':
 	main()
     
