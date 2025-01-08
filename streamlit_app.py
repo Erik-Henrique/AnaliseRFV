@@ -68,7 +68,7 @@ def main():
 
     # Botão para carregar arquivo na aplicação
     st.sidebar.write("## Suba o arquivo")
-    data_file_1 = st.sidebar.file_uploader("Bank marketing data", type = ['csv','xlsx'])
+    data_file_1 = https://raw.githubusercontent.com/Erik-Henrique/AnaliseRFV/refs/heads/main/dados_test_input%202.csv
 
     # Verifica se há conteúdo carregado na aplicação
     if (data_file_1 is not None):
