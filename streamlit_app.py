@@ -58,9 +58,8 @@ def main():
     
     - Recência (R): Quantidade de dias desde a última compra.
     - Frequência (F): Quantidade total de compras no período.
-    - Valor (V): Total de dinheiro gasto nas compras do período.
-    
-    E é isso que iremos fazer abaixo.''')
+    - Valor (V): Total de dinheiro gasto nas compras do período.''')
+    st.write('E é isso que iremos fazer abaixo.')
     st.markdown("---")
 
     # Apresenta a imagem na barra lateral da aplicação
