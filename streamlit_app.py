@@ -62,12 +62,7 @@ def main():
     st.write('E é isso que iremos fazer abaixo.')
     st.markdown("---")
 
-    # Apresenta a imagem na barra lateral da aplicação
-    # image = Image.open("Bank-Branding.jpg")
-    # st.sidebar.image(image)
 
-    # Botão para carregar arquivo na aplicação
-    st.sidebar.write("## Suba o arquivo")
     data_file_1 = "https://raw.githubusercontent.com/Erik-Henrique/AnaliseRFV/refs/heads/main/dados_test_input%202.csv"
 
     # Verifica se há conteúdo carregado na aplicação
