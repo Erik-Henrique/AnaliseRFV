@@ -72,7 +72,7 @@ def main():
     st.sidebar.image(image)
 
 
-	df_compras = pd.read_csv("https://raw.githubusercontent.com/Erik-Henrique/AnaliseRFV/refs/heads/main/dados_test_input%202.csv")
+    df_compras = pd.read_csv("https://raw.githubusercontent.com/Erik-Henrique/AnaliseRFV/refs/heads/main/dados_test_input%202.csv")
 
 	st.write('## Recência (R)')
 
